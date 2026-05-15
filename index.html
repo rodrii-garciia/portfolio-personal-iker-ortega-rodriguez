@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Iker Ortega</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-initials">PORTFOLIO PERSONAL</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link">Inicio</a></li>
+      <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+      <li><a href="#curriculum" class="nav-link">Currículum</a></li>
+      <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+      <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+      <li><a href="#contacto" class="nav-link">Contacto</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <!-- Coloca hero-bg.jpg en assets/ -->
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <!-- Coloca profile.jpg en assets/ -->
+      <div class="hero-photo-wrapper">
+        <img src="assets/fotoPerfil.jpeg" alt="Foto de perfil" class="hero-photo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+        <div class="hero-photo-placeholder" style="display:none">A</div>
+      </div>
+      <h1 class="hero-name">Iker Ortega Rodríguez</h1>
+      <p class="hero-title">Estudiante de Administración y Finanzas</p>
+      <a href="#sobre-mi" class="btn-hero">Conóceme</a>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE MÍ ===== -->
+  <section class="section sobre-mi" id="sobre-mi">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 — Sobre mí</span>
+        <h2 class="section-title">Quién soy</h2>
+      </div>
+      <div class="sobre-grid">
+        <div class="sobre-text reveal">
+          <p class="lead-text">Soy una responsable y proactivo, con habilidades comunicativas y motivación por seguir creciendo profesionalmente.</p>
+          <p>Soy estudiante de Administración y Finanzas con interés en la gestión empresarial, la atención al cliente y la organización administrativa.
+            Me considero una persona responsable, comunicativa y con ganas de seguir aprendiendo y creciendo profesionalmente.</p>
+          <p>Mi objetivo es crecer profesionalmente en un entorno corporativo donde pueda aplicar mis conocimientos y seguir aprendiendo de personas con experiencia.</p>
+          <div class="sobre-datos">
+            <div class="dato">
+              <span class="dato-num">2+</span>
+              <span class="dato-label">Años de formación</span>
+            </div>
+            <div class="dato">
+              <span class="dato-num">3</span>
+              <span class="dato-label">Proyectos realizados</span>
+            </div>
+            <div class="dato">
+              <span class="dato-num">100%</span>
+              <span class="dato-label">Compromiso</span>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-img-wrapper reveal">
+          <div class="sobre-img-frame">
+            <img src="assets\fotoPrincipal.jpeg" alt="Iker Ortega" onerror="this.style.background='var(--color-mid)';this.alt=''" />
+          </div>
+          <div class="sobre-badge">
+            <span>Disponible para prácticas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyectos destacados -->
+      <div class="destacados-header">
+        <span class="section-tag">EN LO PERSONAL...</span>
+      </div>
+      <div class="destacados-grid">
+        <div class="destacado-card reveal">
+          <div class="destacado-img">
+            <img src="assets/esquiando.jpeg" alt="Proyecto 1" onerror="this.parentElement.classList.add('img-placeholder')" />
+          </div>
+          <div class="destacado-body">
+            <h3>Pasar tiempo con mi familia</h3>
+            <p>Me gusta disfrutar del tiempo en familia, especialmente viajando a la nieve y practicando esquí, una actividad que me aporta diversión, superación y buenos momentos compartidos.</p>
+          </div>
+        </div>
+        <div class="destacado-card reveal">
+          <div class="destacado-img">
+            <img src="assets\naranjitos.jpeg" alt="Proyecto 2" onerror="this.parentElement.classList.add('img-placeholder')" />
+          </div>
+          <div class="destacado-body">
+            <h3>Hábitos deportivos</h3>
+            <p>Apasionado del deporte, especialmente del fútbol y el gimnasio, actividades que me han ayudado a desarrollar disciplina, constancia y trabajo en equipo.</p>
+          </div>
+        </div>
+        <div class="destacado-card reveal">
+          <div class="destacado-img">
+            <img src="assets\cine.jpeg" alt="Proyecto 3" onerror="this.parentElement.classList.add('img-placeholder')" />
+          </div>
+          <div class="destacado-body">
+            <h3>Un hobby por el cine</h3>
+            <p>En mi tiempo libre me gusta ir al cine, una actividad que me permite desconectar y ampliar mi visión cultural.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CURRÍCULUM / TIMELINE ===== -->
+  <section class="section curriculum" id="curriculum">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 — Trayectoria</span>
+        <h2 class="section-title">Currículum</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item left reveal">
+          <div class="timeline-connector">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-img-wrap">
+              <img src="assets/safa.jpeg" alt="Formación" onerror="this.parentElement.classList.add('img-placeholder-sm')" />
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-year">2023-2025</span>
+              <h3>Bachillerato, Ciencias sociales</h3>
+              <p>Colegio Sagrada Familia de Urgel (Madrid).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item right reveal">
+          <div class="timeline-connector">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-img-wrap">
+              <img src="assets\cajaMagica.jpeg" alt="Prácticas" onerror="this.parentElement.classList.add('img-placeholder-sm')" />
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-year">2025-Actualidad</span>
+              <h3>Grado superior de administracion y finanzas</h3>
+              <p>Prometeo by thePower</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item left reveal">
+          <div class="timeline-connector">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-img-wrap">
+              <img src="assets\power.jpeg" alt="Proyecto" onerror="this.parentElement.classList.add('img-placeholder-sm')" />
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-year">2025-Actualidad</span>
+              <h3>Master en Data for Business</h3>
+              <p>Prometeo by thePower</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROYECTOS ===== -->
+  <section class="section proyectos" id="proyectos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 — Trabajos</span>
+        <h2 class="section-title">Proyectos</h2>
+      </div>
+      <div class="proyectos-grid">
+
+        <div class="proyecto-card reveal">
+          <div class="proyecto-img-wrap">
+            <img src="assets/asesorIA.jpeg" alt="Proyecto 1" onerror="this.parentElement.classList.add('img-placeholder-lg')" />
+            <div class="proyecto-overlay">
+              <a href="https://docs.google.com/document/d/1jEiUjLKAiPeT-RgU9TdvJgqyk506M3Vm2O_NtW0p5-g/edit?usp=sharing" target="_blank" class="proyecto-link-btn">Ver proyecto ↗</a>
+            </div>
+          </div>
+
+          <div class="proyecto-body">
+            <span class="proyecto-tag">Finanzas</span>
+            <h3>Asesor IA</h3>
+            <p>El objetivo principal de este proyecto es ofrecerle a empresas y a pymes un servicio de consultoría que esté disponible durante las 24h del día, que pueda resolver dudas relacionadas con su negocio en cualquier momento del día. A través de una IA, las empresas pueden consultar problemas y recibir una ayuda inmediata, sin necesidad de nadie externo. De esta manera el sistema busca facilitar un asesoramiento de manera mucho más sencilla.</p>
+            <a href="https://docs.google.com/document/d/1jEiUjLKAiPeT-RgU9TdvJgqyk506M3Vm2O_NtW0p5-g/edit?usp=sharing" target="_blank" class="proyecto-cta">Ver proyecto ↗</a>
+          </div>
+        </div>
+
+        <div class="proyecto-card reveal">
+          <div class="proyecto-img-wrap">
+            <img src="assets\ifema.jpeg" alt="Proyecto 2" onerror="this.parentElement.classList.add('img-placeholder-lg')" />
+            <div class="proyecto-overlay">
+              <a href="https://docs.google.com/document/d/1v27zR5f4kULbQJxbVmHekRRQBKxBVBNvJwf5LVaSYMA/edit?usp=sharing" target="_blank" class="proyecto-link-btn">Ver proyecto ↗</a>
+            </div>
+          </div>
+          <div class="proyecto-body">
+            <span class="proyecto-tag">Contabilidad</span>
+            <h3>Ifema Accountex</h3>
+            <p>En este proyecto el objetivo analizar y comparar distintos softwares de gestión contable, fiscal y laboral recopilados durante nuestra visita al evento Accountex España 2025, celebrado en el recinto Ferial IFEMA Madrid. El propósito de dicho análisis es acercarnos a herramientas profesionales aplicadas en empresas B2B , asesorías, pymes, consultoras y entidades sin ánimo de lucro.</p>
+            <a href="https://docs.google.com/document/d/1v27zR5f4kULbQJxbVmHekRRQBKxBVBNvJwf5LVaSYMA/edit?usp=sharing" target="_blank" class="proyecto-cta">Ver proyecto ↗</a>
+          </div>
+        </div>
+
+        <div class="proyecto-card reveal">
+          <div class="proyecto-img-wrap">
+            <img src="assets\intermodular.jpeg" alt="Proyecto 3" onerror="this.parentElement.classList.add('img-placeholder-lg')" />
+            <div class="proyecto-overlay">
+              <a href="https://docs.google.com/document/d/19WodF0goU9BewRmUV303kaFhmGNmpEkQ-aZvMhYeqQI/edit?usp=sharing" target="_blank" class="proyecto-link-btn">Ver proyecto ↗</a>
+            </div>
+          </div>
+          <div class="proyecto-body">
+            <span class="proyecto-tag">Análisis</span>
+            <h3>BrickWarrior Gym</h3>
+            <p>Este proyecto es una propuesta de negocio llamado "Brickwarrior Gym", un gimnasio innovador que se especializa en la enseñanza y práctica de deportes de contacto como el boxeo y las artes marciales mixtas. Concebido por un equipo de cuatro socios apasionados por el deporte, Brickwarrior busca trascender la oferta convencional de gimnasios, contribuyendo activamente al desarrollo personal y al bienestar integral de sus miembros.</p>
+            <a href="https://docs.google.com/document/d/19WodF0goU9BewRmUV303kaFhmGNmpEkQ-aZvMhYeqQI/edit?usp=sharing" target="_blank" class="proyecto-cta">Ver proyecto ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HABILIDADES ===== -->
+  <section class="section habilidades" id="habilidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 — Competencias</span>
+        <h2 class="section-title">Habilidades</h2>
+      </div>
+      <div class="habilidades-wrapper">
+        <div class="habilidades-col reveal">
+          <h3 class="hab-col-title">Técnicas</h3>
+          <div class="hab-grid">
+            <div class="hab-item">
+              <div class="hab-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg>
+              </div>
+              <span>Excel Avanzado</span>
+            </div>
+            <div class="hab-item">
+              <div class="hab-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 20h20M6 20V10l6-7 6 7v10M10 20v-5h4v5"/></svg>
+              </div>
+              <span>Contabilidad</span>
+            </div>
+            <div class="hab-item">
+              <div class="hab-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+              </div>
+              <span>Gestión Administrativa</span>
+            </div>
+            <div class="hab-item">
+              <div class="hab-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+              </div>
+              <span>Facturación</span>
+            </div>
+            <div class="hab-item">
+              <div class="hab-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </div>
+              <span>Office 365</span>
+            </div>
+            <div class="hab-item">
+              <div class="hab-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <span>Fiscalidad</span>
+            </div>
+          </div>
+        </div>
+        <div class="habilidades-col reveal">
+          <h3 class="hab-col-title">Personales</h3>
+          <div class="hab-grid">
+            <div class="hab-item">
+              <div class="hab-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <span>Trabajo en equipo</span>
+            </div>
+            <div class="hab-item">
+              <div class="hab-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <span>Comunicación</span>
+            </div>
+            <div class="hab-item">
+              <div class="hab-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </div>
+              <span>Organización</span>
+            </div>
+            <div class="hab-item">
+              <div class="hab-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <span>Puntualidad</span>
+            </div>
+            <div class="hab-item">
+              <div class="hab-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <span>Responsabilidad</span>
+            </div>
+            <div class="hab-item">
+              <div class="hab-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <span>Iniciativa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Idiomas y niveles -->
+      <div class="idiomas-section reveal">
+        <h3 class="hab-col-title" style="margin-bottom: 1.5rem;">Idiomas</h3>
+        <div class="idiomas-grid">
+          <div class="idioma-item">
+            <div class="idioma-header">
+              <span class="idioma-name">Español</span>
+              <span class="idioma-level">Nativo</span>
+            </div>
+            <div class="idioma-bar"><div class="idioma-fill" style="--pct: 100%"></div></div>
+          </div>
+          <div class="idioma-item">
+            <div class="idioma-header">
+              <span class="idioma-name">Inglés</span>
+              <span class="idioma-level">B1</span>
+            </div>
+            <div class="idioma-bar"><div class="idioma-fill" style="--pct: 70%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="section contacto" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 — Contacto</span>
+        <h2 class="section-title">Hablemos</h2>
+      </div>
+      <div class="contacto-grid">
+        <div class="contacto-info reveal">
+          <p class="contacto-intro">Estoy abierto a oportunidades de prácticas, colaboraciones académicas y cualquier consulta profesional.</p>
+          <div class="contacto-links">
+            <a href="https://www.linkedin.com/in/iker-ortega-rodr%C3%ADguez063b142b4/" target="_blank" class="contact-btn linkedin">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:ikerortegarodriguez2006@gmail.com" class="contact-btn gmail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+
+        <form class="contacto-form reveal" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" />
+            <span class="form-error" id="error-nombre"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" autocomplete="email" />
+            <span class="form-error" id="error-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+            <span class="form-error" id="error-mensaje"></span>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span class="btn-text">Enviar mensaje</span>
+            <span class="btn-success" style="display:none">✓ Mensaje enviado</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REFLEXIÓN FINAL ===== -->
+  <section class="section reflexion" id="reflexion">
+    <div class="container">
+      <div class="reflexion-inner reveal">
+        <span class="section-tag" style="color: var(--color-gold);">06 — Reflexión</span>
+        <blockquote class="reflexion-quote">
+          "Un gran poder conlleva una gran responsabilidad"
+        </blockquote>
+        <div class="reflexion-text">
+          <p>A lo largo de este ciclo he aprendido que la administración y las finanzas son mucho más que cuentas y balances: son el lenguaje que permite entender cómo funciona una empresa y cómo puede crecer de forma sostenible.</p>
+          <p>Mi objetivo a corto plazo es incorporarme a un equipo profesional donde pueda seguir desarrollando mis competencias, aportar rigor y frescura, y construir una carrera sólida en el ámbito económico-financiero.</p>
+          <p>Cada proyecto realizado, cada clase aprovechada y cada error del que he aprendido me ha traído hasta aquí. Y esto es solo el comienzo.</p>
+        </div>
+        <div class="reflexion-firma">
+          <span>Iker Ortega Rodríguez</span>
+          <span class="firma-titulo">Administración y Finanzas · 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo-initials footer-logo">IO</span>
+      <p>© 2026 Iker Ortega Rodríguez. Portfolio personal.</p>
+      <div class="footer-links">
+        <a href="#hero">Inicio</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
